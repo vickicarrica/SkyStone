@@ -20,10 +20,10 @@ public class squareAutonomous extends LinearOpMode {
     @Override
     public void runOpMode(){
         //Pairs each DcMotor in the code with its corresponding motor port in the robot
-        leftFrontMotor = hardwareMap.dcMotor.get("left_front_motor");
-        rightBackMotor = hardwareMap.dcMotor.get("right_front_motor");
-        leftBackMotor = hardwareMap.dcMotor.get("left_back_motor");
-        rightBackMotor = hardwareMap.dcMotor.get("right_back_motor");
+        leftFrontMotor = hardwareMap.dcMotor.get("left_front");
+        rightBackMotor = hardwareMap.dcMotor.get("right_front");
+        leftBackMotor = hardwareMap.dcMotor.get("left_back");
+        rightBackMotor = hardwareMap.dcMotor.get("right_back");
 
         //"Most robots need the motor on one side to be reversed to drive forward" (FTC BasicOpMode_Linear)
         //sets both left motors (front&back) reversed
