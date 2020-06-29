@@ -35,14 +35,14 @@ public class FoundationAutonomous extends LinearOpMode {
     @Override
     public void runOpMode() {
         //pair our DcMotor variables with the corresponding parts using hardwareMap
-        frontLeft = hardwareMap.dcMotor.get("front_left_motor");
-        frontRight = hardwareMap.dcMotor.get("front_right_motor");
-        backLeft = hardwareMap.dcMotor.get("back_left_motor");
-        backRight = hardwareMap.dcMotor.get("back_right_motor");
+        frontLeft = hardwareMap.dcMotor.get("front_left");
+        frontRight = hardwareMap.dcMotor.get("front_right");
+        backLeft = hardwareMap.dcMotor.get("back_left");
+        backRight = hardwareMap.dcMotor.get("back_right");
 
         //same with the servos
-        leftServo = hardwareMap.get(Servo.class, "left_servo");
-        rightServo = hardwareMap.get(Servo.class, "right_servo");
+        leftServo = hardwareMap.get(Servo.class, "left");
+        rightServo = hardwareMap.get(Servo.class, "right");
 
 
         //Set left motors on reverse:
