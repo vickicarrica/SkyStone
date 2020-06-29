@@ -19,7 +19,7 @@ public class FoundationAutonomous extends LinearOpMode {
     Servo leftServo;
     Servo rightServo;
 
-    //a time variable that I will use when the robot goes and comes back from its original spot to where the foundation
+    //a time variable that I will use when the robot goes and comes back from its original spot to where the foundation is
     //this variable will change depending on how far or close the foundation is to the robot:
     int _timeToFoundation = 3000;
 
