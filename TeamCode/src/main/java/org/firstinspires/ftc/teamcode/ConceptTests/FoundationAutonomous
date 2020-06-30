@@ -59,10 +59,10 @@ public class FoundationAutonomous extends LinearOpMode {
         rightServo.setPosition(0);
 
         //will drive forward (towards foundation) at a power of 25%
-        frontLeft.setPower(.25);
-        frontRight.setPower(.25);
-        backLeft.setPower(.25);
-        backRight.setPower(.25);
+        frontLeft.setPower(-.25);
+        frontRight.setPower(-.25);
+        backLeft.setPower(-.25);
+        backRight.setPower(-.25);
         sleep(_timeToFoundation);
 
         //stops motors
@@ -77,12 +77,14 @@ public class FoundationAutonomous extends LinearOpMode {
         //Servos will turn to grab the foundation
         leftServo.setPosition(1);
         rightServo.setPosition(1);
+        
+        sleep(3000); //wait 3 seconds for next command
 
         //Set the motors to reverse to pull back the foundation into its original position:
-        frontLeft.setPower(-.25);
-        frontRight.setPower(-.25);
-        backLeft.setPower(-.25);
-        backRight.setPower(-.25);
+        frontLeft.setPower(.25);
+        frontRight.setPower(.25);
+        backLeft.setPower(.25);
+        backRight.setPower(.25);
         sleep(_timeToFoundation);
 
         //stop all motors
