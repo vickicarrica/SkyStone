@@ -21,7 +21,7 @@ public class squareAutonomous extends LinearOpMode {
     public void runOpMode(){
         //Pairs each DcMotor in the code with its corresponding motor port in the robot
         leftFrontMotor = hardwareMap.dcMotor.get("leftfront");
-        rightBackMotor = hardwareMap.dcMotor.get("rightfront");
+        rightFrontMotor = hardwareMap.dcMotor.get("rightfront");
         leftBackMotor = hardwareMap.dcMotor.get("leftback");
         rightBackMotor = hardwareMap.dcMotor.get("rightback");
 
